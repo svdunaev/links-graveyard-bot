@@ -1,0 +1,4 @@
+host: "api.telegram.org"
+batchSize: 100
+token: "your telegram bot token here"
+sqliteStoragePath: "data/sqlite/storage.db"
