@@ -25,5 +25,5 @@ go.work
 .env
 
 /config/config.yaml
-/data
+/data/
 /testbot

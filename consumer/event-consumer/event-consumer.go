@@ -20,7 +20,7 @@ func New(fetcher events.Fetcher, processor events.Processor, batchSize int) Cons
 	}
 }
 
-func (c Consumer) Start() error {
+func (c *Consumer) Start() error {
 	for {
 		gotEvents, err := c.fetcher.Fetch(c.batchSize)
 		if err != nil {
