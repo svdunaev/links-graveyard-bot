@@ -8,6 +8,7 @@
 *.so
 *.dylib
 
+
 # Test binary, built with `go test -c`
 *.test
 
@@ -27,3 +28,4 @@ go.work
 /config/config.yaml
 /data/
 /testbot
+/links-graveyard

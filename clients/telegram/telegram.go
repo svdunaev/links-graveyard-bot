@@ -3,11 +3,11 @@ package telegram
 import (
 	"encoding/json"
 	"io"
+	"links-graveyard/lib/e"
 	"net/http"
 	"net/url"
 	"path"
 	"strconv"
-	"testbot/lib/e"
 )
 
 const (

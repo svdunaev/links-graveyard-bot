@@ -2,10 +2,10 @@ package telegram
 
 import (
 	"errors"
-	"testbot/clients/telegram"
-	"testbot/events"
-	"testbot/lib/e"
-	"testbot/storage"
+	"links-graveyard/clients/telegram"
+	"links-graveyard/events"
+	"links-graveyard/lib/e"
+	"links-graveyard/storage"
 )
 
 type Processor struct {

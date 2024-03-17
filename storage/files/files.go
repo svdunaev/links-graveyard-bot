@@ -4,11 +4,11 @@ import (
 	"encoding/gob"
 	"errors"
 	"fmt"
+	"links-graveyard/lib/e"
+	"links-graveyard/storage"
 	"math/rand"
 	"os"
 	"path/filepath"
-	"testbot/lib/e"
-	"testbot/storage"
 	"time"
 )
 

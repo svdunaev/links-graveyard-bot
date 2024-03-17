@@ -1,8 +1,8 @@
 package event_consumer
 
 import (
+	"links-graveyard/events"
 	"log"
-	"testbot/events"
 	"time"
 )
 

@@ -3,12 +3,12 @@ package main
 import (
 	"context"
 	"github.com/joho/godotenv"
+	tgClient "links-graveyard/clients/telegram"
+	eventConsumer "links-graveyard/consumer/event-consumer"
+	"links-graveyard/events/telegram"
+	"links-graveyard/internal/config"
+	"links-graveyard/storage/sqlite"
 	"log"
-	tgClient "testbot/clients/telegram"
-	eventConsumer "testbot/consumer/event-consumer"
-	"testbot/events/telegram"
-	"testbot/internal/config"
-	"testbot/storage/sqlite"
 )
 
 func init() {

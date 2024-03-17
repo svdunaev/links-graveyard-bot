@@ -6,9 +6,9 @@ import (
 	"errors"
 	"fmt"
 	_ "github.com/mattn/go-sqlite3"
+	"links-graveyard/storage"
 	"os"
 	"path/filepath"
-	"testbot/storage"
 )
 
 type Storage struct {

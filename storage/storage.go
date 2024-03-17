@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"testbot/lib/e"
+	"links-graveyard/lib/e"
 )
 
 type Storage interface {
