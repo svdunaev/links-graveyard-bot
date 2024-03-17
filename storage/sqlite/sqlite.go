@@ -6,6 +6,8 @@ import (
 	"errors"
 	"fmt"
 	_ "github.com/mattn/go-sqlite3"
+	"os"
+	"path/filepath"
 	"testbot/storage"
 )
 
@@ -15,6 +17,9 @@ type Storage struct {
 
 // New creates new SQLite storage.
 func New(path string) (*Storage, error) {
+	if err := os.MkdirAll(filepath.Dir(path), 0700); err != nil {
+		return nil, err
+	}
 	db, err := sql.Open("sqlite3", path)
 	if err != nil {
 		return nil, fmt.Errorf("cant open database: %w", err)
